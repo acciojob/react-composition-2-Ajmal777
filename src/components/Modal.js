@@ -8,12 +8,12 @@ const Modal = () =>{
     }
 
     return (
-        <div className="modal-overlay">
+        <div className="model-overlay">
             <button onClick={()=> setShowModal(true)}>Show Modal</button>
             {
                 showModal && 
-                    <div className="modal">
-                        <button onClick={onClose}>Close</button>
+                    <div className="model">
+                        <button className="model-close" onClick={onClose}>Close</button>
                         <p>This is the content of the modal.</p>
                     </div>
             }
